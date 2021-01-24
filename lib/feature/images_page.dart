@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/feature/image_card.dart';
 import 'package:news_app/model/unsplash_image.dart';
 import 'package:news_app/repository/get_unsplash_images.dart';
 
@@ -34,9 +33,11 @@ class _ImagesPageState extends State<ImagesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text(
-        widget.title,
-        style: appBarTextStyle,
+      appBar: AppBar(
+        title: Text(
+          widget.title,
+          style: appBarTextStyle,
+        ),
       ),
       // TODO 0: CustomScrollView with scrollDirection and slivers
       // TODO 0.1: Add a scrollDirection Axis.vertical to the CustomScrollView

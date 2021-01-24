@@ -16,10 +16,7 @@ class ImageCard extends StatelessWidget {
       child: SizedBox(
         height: 250,
         child: Card(
-          child: Image.network(
-            image.imageUrl,
-            fit: BoxFit.cover,
-          ),
+          child: Image.network(image.imageUrl, fit: BoxFit.cover),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),

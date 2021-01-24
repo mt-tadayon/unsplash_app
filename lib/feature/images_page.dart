@@ -33,17 +33,17 @@ class _ImagesPageState extends State<ImagesPage> {
         slivers: [
           SliverAppBar(
             backgroundColor: Colors.deepOrange,
-            expandedHeight: 100,
             floating: true,
-            pinned: true,
+            snap: true,
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
               title: Text(
                 widget.title,
                 style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
@@ -60,8 +60,7 @@ class _ImagesPageState extends State<ImagesPage> {
       delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
           return ImageCard(
-            images: images,
-            index: index,
+            image: images[index],
           );
         },
         childCount: images.length,
@@ -77,8 +76,7 @@ class _ImagesPageState extends State<ImagesPage> {
         int index,
       ) {
         return ImageCard(
-          images: images,
-          index: index,
+          image: images[index],
         );
       }, childCount: images.length),
     );
@@ -91,8 +89,7 @@ class _ImagesPageState extends State<ImagesPage> {
       delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
           return ImageCard(
-            images: images,
-            index: index,
+            image: images[index],
           );
         },
         childCount: images.length,

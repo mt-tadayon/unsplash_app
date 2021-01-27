@@ -42,7 +42,7 @@ class _ImagesPageState extends State<ImagesPage> {
       // TODO 0: CustomScrollView with scrollDirection and slivers
       // TODO 0.1: Add a scrollDirection Axis.vertical to the CustomScrollView
       // TODO 0.2: Add a list of slivers
-      // TODO 1: Add a [SliverAppBar] with floating, snap and flexibleSpace
+      // TODO 1: Add a [SliverAppBar] with floating, strech, snap and flexibleSpace
       // TODO 2: Add a FlexibleSpaceBar Widget with a text of widget.title
       // TODO 3: Create a [SliverList] with a SliverChildBuilderDelegate
       // TODO 4: For each element in the images list create a ImageCard
